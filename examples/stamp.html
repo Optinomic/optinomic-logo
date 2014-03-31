@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Optinomic logo examples</title>
+
+    <style>
+    .container {
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        color: #777;
+        font-family: serif;
+    }
+    </style>
+
+
+</head>
+
+<body ng-controller="MyCtrl">
+    <br>
+    <br>
+
+    <div class="container">
+        <br>
+        <optinomic-logo size=150 background="white" fill="white" animation="off" stroke="black" stroke-width=1 logo-src="../src/optinomic.svg"></optinomic-logo>
+        <p>&nbsp;</p>
+        <optinomic-logo size=150 background="white" fill="#EE3B16" animation="off" stroke="white" stroke-width=2 logo-src="../src/optinomic.svg"></optinomic-logo>
+        <p>&nbsp;</p>
+        <optinomic-logo size=150 background="white" fill="#EE3B16" animation="off" stroke="white" stroke-width=2 logo-src=""></optinomic-logo>
+
+
+    </div>
+
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/d3.v2.js"></script>
+    <script src="../lib/angular.js"></script>
+    <script src="../src/optinomic-logo.js"></script>
+    <script>
+    angular.module('MyApp', ['optinomic-logo'])
+        .controller('MyCtrl', [
+            function() {}
+        ]);
+    </script>
+</body>
+
+</html>
